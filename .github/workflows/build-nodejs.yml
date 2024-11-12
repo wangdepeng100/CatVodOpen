@@ -27,7 +27,6 @@ jobs:
         git add -f index.config.js.md5
         git add -f index.js
         git add -f index.js.md5
-        git add -f README.md
         commit_msg="* 发布 CatVodOpen新源"
         git commit -a -m "$commit_msg"
 
