@@ -19,6 +19,27 @@ jobs:
         npm i
         npm i lodash
         npm run build
+
+    - name: Commit NodeJS Config files
+      working-directory: nodejs
+      run: |
+        git add index.config.js
+        git add index.config.js.md5
+        git add index.js
+        git add index.js.md5
+        git add README.md
+        commit_msg="* 发布 CatVodOpen新源"
+        git commit -a -m "$commit_msg"
+
+    - name: Push NodelJS Config Changes To Gitee
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GE_TOKEN }}
+        repository: ${{ secrets.GE_PATH }}
+        directory: .
+        branch: dist
+        force: true
+        github_url: https://gitee.com
         
     - name: Archive dist
       uses: actions/upload-artifact@v4
