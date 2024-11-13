@@ -32,6 +32,8 @@ jobs:
         git add -f index.js.md5
         commit_msg="* 发布 CatVodOpen新源"
         git commit -a -m "$commit_msg"
+        git fetch --unshallow
+
 
     - name: Push NodeJS Config Changes To Gitee
       uses: ad-m/github-push-action@master
