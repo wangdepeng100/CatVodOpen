@@ -21,18 +21,16 @@ jobs:
         npm run build
 
     - name: Commit NodeJS Config files
-      working-directory: nodejs/dist
       run: |
-        checkname=$(git rev-list --max-parents=0 HEAD)
-        git checkout  $checkname -b dist  ##分支不存在用这个
-        cp -r code/nodejs/dist/* ./
-        cp -r code/nodejs/readme.md ./README.md
         git config --global user.email "${{ secrets.GT_EMAIL }}"
         git config --global user.name "${{ secrets.GT_ACTOR }}"
+        cd nodejs/ds
         git add -f index.config.js
         git add -f index.config.js.md5
         git add -f index.js
         git add -f index.js.md5
+        cd nodejs
+        git add -f dist
         commit_msg="* 发布 CatVodOpen新源"
         git commit -a -m "$commit_msg"
 
