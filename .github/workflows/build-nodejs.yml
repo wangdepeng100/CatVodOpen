@@ -13,7 +13,7 @@ jobs:
       with:
         node-version: 18.17.1
         
-    - name: Run npm bild
+    - name: Run npm build
       working-directory: nodejs
       run: |
         npm i
@@ -29,12 +29,12 @@ jobs:
         git add -f index.config.js.md5
         git add -f index.js
         git add -f index.js.md5
-        cd nodejs
+        cd  dist
         git add -f dist
         commit_msg="* 发布 CatVodOpen新源"
         git commit -a -m "$commit_msg"
 
-    - name: Push NodelJS Config Changes To Gitee
+    - name: Push NodeJS Config Changes To Gitee
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GE_TOKEN }}
