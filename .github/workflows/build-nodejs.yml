@@ -24,13 +24,10 @@ jobs:
       run: |
         git config --global user.email "${{ secrets.GT_EMAIL }}"
         git config --global user.name "${{ secrets.GT_ACTOR }}"
-        cd dist
         git add -f index.config.js
         git add -f index.config.js.md5
         git add -f index.js
         git add -f index.js.md5
-        cd  dist
-        git add -f dist
         commit_msg="* 发布 CatVodOpen新源"
         git commit -a -m "$commit_msg"
 
