@@ -29,8 +29,8 @@ jobs:
         git config --global user.name "${{ secrets.GT_ACTOR }}"
         git commit -a -m "message"
         checkname=$(git rev-list --max-parents=0 HEAD)
-        git checkout  $checkname -b dist  ##分支不存在用这个
-        cd dist
+        git checkout  $checkname -b release  ##分支不存在用这个
+        cp -r dist ./
         git add index.config.js
         git add index.config.js.md5
         git add index.js
