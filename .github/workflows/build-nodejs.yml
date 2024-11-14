@@ -27,8 +27,7 @@ jobs:
       run: |
         git config --global user.email "${{ secrets.GT_EMAIL }}"
         git config --global user.name "${{ secrets.GT_ACTOR }}"
-        git commit -a -m "message"
-        checkname=$(git rev-list --max-parents=0 HEAD)
+
         git checkout  $checkname -b dist  ##分支不存在用这个
         cd dist
         git add index.config.js
