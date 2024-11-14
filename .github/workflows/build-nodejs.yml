@@ -31,7 +31,7 @@ jobs:
         checkname=$(git rev-list --max-parents=0 HEAD)
         git checkout  $checkname -b release  ##分支不存在用这个
         ls -d /home/runner/work/CatVodOpen
-        cp -r /dist ./
+        cp -r dist/* ./
         git add index.config.js
         git add index.config.js.md5
         git add index.js
