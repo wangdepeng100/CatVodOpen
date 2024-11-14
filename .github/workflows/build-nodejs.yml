@@ -30,11 +30,11 @@ jobs:
         checkname=$(git rev-list --max-parents=0 HEAD)
         git checkout  $checkname -b release  ##分支不存在用这个
         cp -r nodejs/dist ./
+        cd dist
         git add index.config.js
         git add index.config.js.md5
         git add index.js
         git add index.js.md5
-        git add dist
         commit_msg="* 发布 CatVodOpen新源"
         git commit -a -m "$commit_msg"
 
