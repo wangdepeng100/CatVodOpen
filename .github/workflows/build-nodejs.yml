@@ -30,6 +30,7 @@ jobs:
         git commit -a -m "message"
         checkname=$(git rev-list --max-parents=0 HEAD)
         git checkout  $checkname -b release  ##分支不存在用这个
+        pwd 
         cp -r /dist ./
         git add index.config.js
         git add index.config.js.md5
