@@ -82,7 +82,7 @@ import ly from './spider/video/ly.js';
 
 //const spiders = [douban,live,wogg,wobg,tudou,kkys,czzy,ikanbot,nangua,ttian,ttkx,baipiaoys,meijumi,zxzj,xinshijue,ddys,nongmin,rrys,djx,jojo,saohuo,nkvod,xiaoya,wf,yunpanres,klm,libvio,subaibai,kunyu77,ys996,ly,af,nicoletv,boo,tuxiaobei,ub,cntv,huya,douyu,bili,_360ba,ktv,sharenice,mayiya,m3u8cj,appys,yingso,bqr,pikaso,xxpan,upyun,pansearch,yiso, push, alist, _13bqg, laobaigs,bookan, copymanga,bg,fengche,baozimh,coco];
 
-const spiders = [douban,live,wogg,wobg,czzy,ikanbot,nangua,ttian,zxzj,xinshijue,ddys,nongmin,rrys,nkvod,wf,yunpanres,klm,libvio,subaibai,boo,ub,cntv,huya,douyu,_360ba,m3u8cj,appys,yingso,bqr,pikaso,xxpan,upyun,pansearch,yiso, push, alist, laobaigs,bookan, copymanga,bg,fengche,baozimh,coco];
+const spiders = [douban,live,wogg,wobg,czzy,subaibai,ikanbot,nangua,ttian,zxzj,xinshijue,ddys,nongmin,rrys,nkvod,wf,yunpanres,klm,libvio,cntv,huya,douyu,_360ba,m3u8cj,appys,yingso,bqr,pikaso,xxpan,upyun,pansearch,yiso, push, alist, laobaigs,bookan, copymanga,bg,fengche,baozimh,coco];
 
 const spiderPrefix = '/spider';
 
