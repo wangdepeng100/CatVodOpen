@@ -44,7 +44,7 @@ export default {
   },
 
 wogg: {
-    url: 'https://wogg.xyz',
+    url: 'https://www.wogg.net',
 },
 tudou: {
     url: 'https://tudou.lvdoui.top',
@@ -53,7 +53,7 @@ wobg: {
     url: 'https://wobge.run.goorm.io/',
 },
 czzy: {
-        url: 'https://cz01.vip'
+        url: 'https://www.czzy.site'
 },
 ttkx: {
     url: 'http://ttkx.live:3328/',
